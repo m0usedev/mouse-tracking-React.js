@@ -1,0 +1,50 @@
+/*Para que cuando el raton esta en el navegador se vean los punteros*/
+html:hover {
+    .Cursor-Module .List-Cursor-Followers:not([data-status-tracking=false]) {
+        display: block;
+    }
+}
+
+/*Para que cuando el raton esta fuera del navegador no se vean los punteros*/
+html:not(:hover) {
+    .Cursor-Module .List-Cursor-Followers .Cursor-Follower:not([data-status-tracking=true]) {
+        display: none;
+    }
+}
+
+/*
+La idea de estos dos ultimos estilos es que cuando 
+entras no se vea feo donde esta el puntero inicial, 
+y cuando salgas no se queden feos en medio de la ventana
+*/
+
+.Cursor-Module {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .List-Cursor-Followers {
+
+        &[data-status-tracking=true] {
+            display: block;
+        }
+
+        &[data-status-tracking=false] {
+            display: none;
+        }
+
+        .Cursor-Follower {
+            position: absolute;
+            top: -25px;
+            /* Esto es para centrar el elemento en el cursor, la mitad de height*/
+            left: -25px;
+            /* Esto es para centrar el elemento en el cursor, la mitad de width*/
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            pointer-events: none;
+            /* Esto es para que el raton pueda interactuar con las cosas si nque el elemento que sigue al cursor moleste*/
+        }
+    }
+}
