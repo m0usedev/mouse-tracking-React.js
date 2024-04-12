@@ -2,7 +2,7 @@
 
 Proyecto desarrollado en React.js sobre una serie de punteros que se añaden de forma dinamica y que siguen al mouse.
 
-![gift_app_mouse_tracking](https://github.com/m0usedev/mouse-tracking-React.js/assets/127488603/5a319bbb-adeb-4761-ad50-7412c9da8aa2 | width=100
+![gift_app_mouse_tracking](https://github.com/m0usedev/mouse-tracking-React.js/assets/127488603/5a319bbb-adeb-4761-ad50-7412c9da8aa2 | width=100)
 
 
 ## 📖 Comentarios del desarrollo:
